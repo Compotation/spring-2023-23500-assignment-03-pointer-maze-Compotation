@@ -3,6 +3,8 @@ CXXFLAGS= -g
 LDFLAGS=
 CXX=g++
 
+all: $(OBJECTS)
+	$(CXX) -g  -o main $(OBJECTS)
 main: $(OBJECTS)
 	$(CXX) -g  -o main $(OBJECTS)
 Labyrinth.o: Labyrinth.cpp Labyrinth.h
